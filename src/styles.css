@@ -1,0 +1,18 @@
+@import "tailwindcss";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes progress {
+    0% {
+        left: 0;
+    }
+    100% {
+        left: calc(100% - 56px);
+    }
+}
+
+.animate-progress {
+    animation: progress 2.5s linear infinite alternate;
+}
